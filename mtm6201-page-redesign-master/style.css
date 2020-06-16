@@ -1,0 +1,141 @@
+/*Beginning of the stylesheet*/
+
+/*setting the body in the center*/
+body{
+    background-color: rgb(12, 15, 32);
+    max-width: 95%;
+    margin: auto;
+}
+
+/*mobile view first*/
+/*styling the navigation bar*/
+nav#nav.nav{
+    max-width: 95%;
+    margin: 2px auto;
+    padding: 2%;
+    text-align: center;
+    background-color:pink;
+    border: 3px solid rgb(66, 71, 100);
+    border-right: none;/*to remove borders from either sides*/
+    border-left: none;
+}
+
+/*selecting the navigation links to style*/
+.nav a.nav-link{
+    color: rgb(66, 71, 100);
+    padding: 3%;
+    font-size: 1.5rem;
+    margin: 0px;
+}
+
+/*centering and setting the background color of main*/
+main#main.main{
+    max-width: 95%;
+    background-color: rgb(12, 15, 32);
+    margin: 0px auto;
+}
+
+/*styling the home section*/
+section#home.home{
+    padding: 3rem 1rem 1rem 1rem;
+    background-color: rgb(12, 15, 32);
+}
+
+h1.page-title{
+    color: white;
+    text-decoration: underline;
+}
+
+.home p{
+    color: white
+}
+
+/*styling the about section*/
+section#about.about{
+    background-color: rgb(12, 15, 32);
+    padding: 1rem;
+}
+
+/*floating and setting the size of the image*/
+img.about-image{
+    float: left;
+    width: 40%;
+}
+
+/*styling the contact section*/
+section#contact.contact{
+    background-color: rgb(12, 15, 32);
+    padding: 1rem;
+}
+
+h2.section-title{
+    color: white;
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+.about p{
+    font-family: cursive;
+    color: white;
+}
+
+/*to enf the floating of the image*/
+.contact{
+    content: "";
+    clear: both;
+}
+
+/*contact form styling*/
+.contact p{
+    color: white;
+    font-family: cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/*background of the form*/
+form.contact-form{
+    background-color: pink;
+    width: 60%;
+}
+
+/*headings of the form*/
+label.contact-form-label{
+    font-family: cursive;
+}
+
+/*setting the width of the input field*/
+input.contact-form-input{
+    width: 95%;
+}
+
+/*setting the width of the textarea*/
+textarea.contact-form-input{
+    width: 95%;
+}
+
+button{
+    padding: 0.5rem;
+    color: black;
+}
+
+/*footer styling*/
+footer p{
+    color: white;
+    text-align: center;
+    font-family: cursive;
+}
+
+/*breakpoint for the desktop view*/
+@media (min-width: 900px){
+    /*increasing the font-size of the navigation links*/
+    .nav a.nav-link{
+        font-size: 2.5rem;
+        padding: 5%;
+    }
+    /*adjusting the image size in te desktop view*/
+    img.about-image{
+        float: left;
+        width: 20%;
+    }
+}
