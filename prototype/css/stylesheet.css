@@ -283,7 +283,7 @@ header ul li a:hover{
     border-color: rgb(81, 21, 107);
 }
   
-/**defining animation**//
+/**defining animation**/
 @keyframes a-underline {
     0%, 10% {
       left: 0;
