@@ -1,0 +1,801 @@
+/** the main stylesheet of the website**/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap'); /** importing font from google fonts**/
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/** giving all images global width of 100%**/
+img{
+    width: 100%;
+}
+
+/** styling attributes for body, centering it into the viewport, giving background color**/
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: rgb(255, 225, 128);
+}
+
+/**styliong attributes for the main**/
+main{
+    max-width: 90%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/**styling and centering the main logo image**/
+.logo img{
+    width: 250px;
+    align-items: center;
+    display: block;
+    margin: 4% auto;
+}
+
+/** global attributes for all horizontal lines**/
+hr{
+    border: 1.25px solid rgb(71, 35, 14);
+}
+
+/** styling of nav begins here**/
+header ul li{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5%;
+}
+header ul li:nth-child(1){
+    margin-left: 0;
+}
+header ul{
+    text-align: center;
+}
+header ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+}
+/** hover styliong**/
+header ul li a:hover{
+    background-color:rgb(36, 8, 49);
+    color: white;
+    transition: 0.5s ease-in;
+    animation-name: nav;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+/**animation for the nav links when hovered**/
+@keyframes nav{
+    0%{
+        background-color: rgb(36, 8, 49, 0.0);
+        margin-left: -50%;
+    }
+    100%{
+        background-color: rgb(36, 8, 49); 
+        }
+}
+
+/** main banner styling**/
+.banner-text1{
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(99, 58, 117);
+    color: white;
+}
+.banner-text1 h1{
+    font-size: 1.75rem;
+    color: rgb(240, 206, 255);
+}
+/**styling the button linking to about page, (learn more)**/
+.banner-button1{
+    display: block;
+    margin: 2% auto;
+    text-align: center;
+    padding: 0.75rem;
+}
+.banner-button1 a{
+    text-decoration: none;
+    color: rgb(52, 9, 71);
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    border: 1.5px solid rgb(52, 9, 71);
+    box-shadow: 7px 10px rgb(39, 7, 53);
+}
+.banner-button1 a:hover{
+    box-shadow: 0px 0px;
+    background-color: rgb(226, 190, 90);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+/**styliong the section2, products section of the homepage**/
+.products{
+    text-align: center;
+    margin-top: 10%;
+}
+.product-types{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "p-block1 p-block1 p-block1"
+                         "p-block2 p-block2 p-block2"
+                         "p-block3 p-block3 p-block3";
+}
+.products img{
+    height: 500px;
+    padding: 0.5rem;
+}
+.product1{
+    padding: 0.5rem;
+    grid-area: p-block1;
+}
+.product2{
+    padding: 0.5rem;
+    grid-area: p-block2;
+}
+.product3{
+    padding: 0.5rem;
+    grid-area: p-block3;
+}
+.products a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    animation-name: product;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+/**animation for the product types links**/
+@keyframes product{
+    0%, 100%{
+        background-color: rgb(202, 183, 129, 0.0);
+    }
+    50%{
+        background-color: rgb(223, 195, 117);
+    }
+}
+@keyframes products-hover{
+    0%, 100%{
+        background-color: rgb(233, 195, 117);
+    }
+}
+.product-types a:hover{
+    animation-name: products-hover;
+    animation-iteration-count: infinite;
+}
+
+/**styling banner2 of the homepage**/
+.banner-img2 img{
+    height: 70%;
+    margin-top: 5%;
+}
+.banner2{
+    position: relative;
+}
+.banner-text2{
+    position: absolute;
+    background-color: rgb(37, 37, 37, 0.5);
+    width: 50%;
+    padding: 1rem;
+    bottom: 30px;
+    right: 20px;
+    color: white;
+}
+.banner-text2 h2{
+    font-size: 1.25rem;
+}
+.banner-text2 p{
+    font-size: 1rem;
+}
+
+/**styling the concluding section of the site**/
+.section3{
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+     "block1 block1"
+     "block2 block2";
+     justify-content: center;
+     align-content: center;
+}
+.part1{
+    grid-area: block1;
+}
+.links{
+    grid-area: block2;
+    text-align: center;
+    background-color: rgb(238, 211, 137)
+}
+.links h3, .part2 h2{
+    font-size: 1.5rem;
+}
+.links ul{
+    padding: 0;
+}
+.links li{
+    list-style-type: none;
+}
+.links a{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    transition: color .4s ease-out;
+}
+
+/**nested grid for the information section**/
+.information{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.information img{
+    height: 200px;
+    width: 200px;
+}
+.information .block2{
+    align-content: center;
+}
+.discover{
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+/** animation for the underlines of the links**/
+.links a{
+    font-size: 1.25rem;
+    color: rgb(52, 9, 71);
+    text-decoration: none;
+    position: relative;
+    transition: color .4s ease-out;
+    padding: 0.5rem;
+}
+.links a:after {
+    border-radius: 1em;
+    border-top: .1em solid #2F56B0;
+    content: "";
+    position: absolute;
+      right: 100%;
+      bottom: .16em;
+      left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1), border-color .4s ease-out;
+}
+.links a:hover {
+    color: rgb(81, 21, 107);
+    right: 0;
+    text-decoration: none;
+  }
+  
+.links a:hover:after {
+    border-color:rgb(81, 21, 107);
+    right: 0;
+}
+.links a:hover:after {
+    animation: a-underline 1s cubic-bezier(0,.5,0,1);
+    animation-iteration-count: infinite;
+    border-color: rgb(81, 21, 107);
+}
+  
+/**defining animation**//
+@keyframes a-underline {
+    0%, 10% {
+      left: 0;
+      right: 100%;
+    }
+40%, 60% {
+      left: 0;
+      right: 0;
+    }
+90%, 100% {
+      left: 100%;
+      right: 0;
+    }
+}
+
+/** styling the section containing location image and contact form**/
+.section4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "block1 block1"
+    "block2 block2";
+    justify-content: center;
+    align-content: center;
+}
+.section4 .part1{
+    grid-area: block1;
+}
+.section4 .part2{
+    grid-area: block2;
+    margin-top: -22%;
+}
+.section4 .part2, .contactform{
+    background-color: rgba(173, 139, 88, 0.5);
+}
+.section4 .part2 h2{
+    text-align: center;
+}
+.section4 img{
+    height: 200px;
+    width: 250px;
+    align-items: center;
+    display: block;
+    margin: auto;
+    margin-top: -10%;
+    outline: 15px solid rgb(255, 225, 128); 
+}
+.section4 img:hover{ /** hover effect for the map image**/
+    opacity: 0.7;
+}
+
+/**styling the contact form**/
+.form{
+    padding: 0.75rem;
+}
+label{
+    font-size: 1.2rem;
+}
+input[type=text], input[type=number], input[type=email]{
+    width: 100%;
+    padding: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+/** omitting and re-designing the :focus styles of the input**/
+input[type=text]:focus, input[type=number]:focus, input[type=email]:focus{
+    background-color: rgb(255, 241, 196);
+    outline: none;
+}
+textarea{
+    width: 100%;
+}
+/** styling the form buttons**/
+.form button{
+    background-color: rgb(52, 9, 71);
+    color: white;
+    border: none;
+    font-size: 0.95rem;
+    padding: 0.5rem 1.5rem;
+}
+.form button:hover{
+    background-color: rgb(81, 21, 107);
+    transform: scale(1.2);
+    transition: 0.25s ease-in;
+}
+
+/**styliong the footer section**/
+footer{
+    background-color: rgb(81, 21, 107);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    margin-top: 10px;
+}
+
+/*contact page*/
+.section1, .section2 h1{
+    text-align: center;
+}
+.icons{
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+.icons i{
+    padding: 1rem;
+    color: black;
+    background-color: rgb(201, 175, 106);
+    border-radius: 50px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/** defining the animation for the contact icons**/
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes hover{
+    50% {
+        transform: scale(0.8);
+    }
+}
+@keyframes active{
+    100%{
+        transform: scale(10.0);
+    }
+}
+
+/** hover properties for icons**/
+.icons i:hover{
+    animation-name: hover;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+/** properties for icons when they're active**/
+.icons i:active{
+    animation-name: active;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+/*styling section having location image and contact form*/
+.section2{
+    margin-top: 5%;
+}
+.section2 hr{
+    width: 30%;
+}
+
+.section2 a img:hover{
+    opacity: 0.8;
+}
+.contactform{
+    padding: 0.5rem;
+}
+.contactform h2{
+    text-align: center;
+}
+
+/*first breakpoint, tablet view*/
+@media (min-width: 600px){
+    /*increasing font size and margin of nav links*/
+    header ul li{
+        margin-left: 15%;
+        font-size: 1.5rem;
+    }
+
+    /*re-styling the products grid*/
+    .product-types{
+        grid-template-areas: 
+        "type1 type2 type3";
+    }
+    .products img{
+        height: 250px;       
+    }
+    .product1{
+        grid-area: type1;
+        grid-row: 1/4;
+        padding: 0.5rem 0.1rem;
+    }
+    .product2{
+        grid-area: type2;
+        grid-row: 1/4;
+        padding: 0.5rem 0.1rem;
+    }
+    .product3{
+        grid-area: type3;
+        grid-row: 1/4;
+        padding: 0.5rem 0.1rem;
+    }
+
+    /*arranging the banner text of section part*/
+    .banner-text2{
+        width: 60%;
+        padding: 1rem;
+        bottom: 30px;
+        right: 20px;
+        color: white;
+    }
+    .banner-text2 h2{
+        font-size: 1.5rem;
+    }
+    .banner-text2 p{
+        font-size: 1.25rem;
+    }
+
+    /*the concluding section*/
+    .section3{
+        padding: 0;
+        grid-gap: 20px;
+        grid-template-areas:
+         "block1 block2";
+         justify-content: center;
+         align-content: center;
+         margin-top: 5%;
+    }
+    .part1{
+        grid-area: block1;
+        grid-row: 1/3;
+    }
+    .links{
+        grid-area: block2;
+        grid-row: 1/3;
+        vertical-align: center;
+    }
+    .links h3, .part2 h2{
+        font-size: 1.25rem;
+    }
+    
+    /*nested grid*/
+    .information{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .information img{
+        height: 150px;
+        width: 150px;
+    }
+    .information .block2{
+        font-size: 0.95rem;
+    }
+    .discover{
+        text-align: left;
+    }
+
+    /*increasing space between the icons*/
+    .icons i{
+        margin: auto 0.5rem;
+    }
+
+    /*putting the location image and the form in two columns*/
+    .section4{
+        grid-template-areas:
+        "block1 block2";
+    }
+    .section4 .part1{
+        grid-area: block1;
+        grid-row: 1/3;
+    }
+    .section4 .part2{
+        grid-area: block2;
+        grid-row: 1/3;
+        margin-top: 10%;
+    }
+    /*adjusting the width of the location image*/
+    .section4 img{
+        height: 250px;
+        width: 250px;
+        align-items: center;
+        display: block;
+        margin: 0;
+        outline: 0px; 
+        margin-top: 10%;
+    }
+    /*adjusting the contact form*/
+    .form{
+        padding: 0.75rem;
+    }
+    label{
+        font-size: 1.2rem;
+    }
+    input[type=text], input[type=number], input[type=email]{
+        width: 100%;
+        padding: 0.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    /*giving footer more space from top*/
+    footer{
+        margin-top: 30px;
+    }
+}
+
+/*immediate breakpoint for the products images*/
+@media(min-width: 750px){
+    .products img{
+        height: 320px;   
+    }
+}
+
+/*second breakpoint for the desktop view*/
+@media(min-width: 900px){
+    header ul li{
+        margin-left: 25%;
+        font-size: 2rem;
+    }
+
+    /* re-adjusting the products image sizes*/
+    .products img{
+        height: 370px;   
+    }
+
+    /*arranging the banner2 text*/
+    .banner-text2{
+        width: 70%;
+        bottom: 50px;
+    }
+    .banner-text2 h2{
+        font-size: 2rem;
+    }
+    .banner-text2 p{
+        font-size: 1.5rem;
+    }
+    .links h3, .part2 h2{
+        font-size: 1.5rem;
+    }
+    
+    /*nested grid of the concluding section*/
+    .information{
+        grid-gap: 0.1px;
+    }
+    .information img{
+        height: 170px;
+        width: 170px;
+    }
+    .information .block2{
+        font-size: 1rem;
+    }
+
+    .icons i{
+        margin: auto 0.95rem;
+    }
+
+    /*decreasing the width of the whole section for visual appealing*/
+    .section2{
+        width: 80%;
+        margin: auto;
+    }
+
+    .section4 img{
+        height: 250px;
+        width: 350px;
+        align-items: center;
+        display: block;
+        margin: 0;
+        margin-top: 10%;
+    }
+
+    /*increasing the contact form area*/
+    .form{
+        padding: 0.75rem;
+    }
+
+    footer.a-footer{
+        color: white;
+    }
+}
+
+/*fourth breakpoint for the some adjustments*/
+@media(min-width: 1100px){
+    /*increasing image size*/
+    .logo img{
+        width: 300px;
+    }
+
+    /*incrasing the logo size*/
+    header ul li{
+        margin-left: 13%;
+    }
+
+    /*adjustments for some texts and font sizes*/
+    .banner-text1 h1{
+        font-size: 2rem;
+    }
+    .banner-text1 h4{
+        font-size: 1.25rem;
+    }
+    .banner-button1 a{
+        font-size: 1.5rem;
+    }
+    .products a{
+        font-size: 2rem;
+    }
+    .banner-text2{
+        width: 80%;
+        bottom: 70px;
+    }
+    .banner-text2 h2{
+        font-size: 2rem;
+    }
+    .banner-text2 p{
+        font-size: 1.5rem;
+    }
+    .links h3, .part2 h2{
+        font-size: 2rem;
+    }
+    .links a{
+        font-size: 1.75rem;
+    }
+    
+    /*increasing the image sizes*/
+    .information img{
+        height: 200px;
+        width: 200px;
+    }
+    .section2 img{
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    .section4 img{
+        height: 450px;
+        width: 450px;
+    }
+    .products img{
+        height: 420px;
+    }
+
+    .information .block2{
+        font-size: 1.25rem;
+        margin-left: -10%;
+    }
+
+    .icons i{
+        margin: auto 1.25rem;
+    }
+
+    /*displaying the about section into grid for accomplishing the layout*/
+    .about1{
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "a-block1  a-block2 a-block3";
+        grid-gap: 3%;
+        justify-content: center;
+        align-content: center;
+        background-color: rgb(241, 213, 135)
+    }
+    .a-block1{
+        grid-area: a-block1;
+    }
+    .a-block1 img{
+        height: 100%;
+    }
+    .a-block2{
+        grid-area: a-block2;
+        text-align: center;
+    }
+    .a-block3{
+        grid-area: a-block3;
+    }
+    .a-block3 img{
+        height: 100%;
+    }
+
+    /*adjusting the contact form for greater view*/
+    .contactform h2{
+        font-size: 2rem;
+    }
+    form label{
+        font-size: 1.75rem;
+    }
+    form input{
+        padding: 2rem;
+    }
+    label{
+        font-size: 1.25rem;
+    }
+}
+
+/*immediate breakpoint for some adjustments*/
+@media(min-width: 1300px){
+    /*adjusting image sizes*/
+    .products img{
+        height: 470px;
+    }
+    .section4 img{
+        width: 500px;
+        width: 500px;
+    }
+    /*adjusting the margin for the nested concluding section*/
+    .information .block2{
+        margin-left: -20%;
+    }
+}
+
+/*immediate breakpoint for some adjustments*/
+@media(min-width: 1400px){
+    /*adjusting image sizes*/
+    .products img{
+        height: 550px;
+    }
+    
+    /*adjusting the margin for the nested concluding section*/
+    .information .block2{
+        margin-left: -25%;
+    }
+}

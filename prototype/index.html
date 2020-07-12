@@ -1,0 +1,131 @@
+<!--The Home page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css"> <!--linking style sheet-->
+    <title>Homepage</title>
+</head>
+<body>
+    <!--Header with navigation starting here-->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"> <!--Class for logo image-->
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <hr>
+            <hr>
+            <ul> <!--Unordered list for navigation links-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main content of the page-->
+    <main class="main">
+        <div class="banner1"> <!--class for section1 of the homepage-->
+            <div class="banner-img1">
+                <img src="images/banner1.jpg" alt="chocolate cake pops">
+            </div>
+            <hr>
+            <div class="banner-text1">
+                <h1>WELCOME TO D'CRUZE CAKE POPPIES</h1>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatem minima consequatur minus vero numquam, illo quo quos voluptas sapiente aliquid error a ipsum pariatur dolores temporibus nostrum! Dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eveniet maiores quam ipsum! Ipsa quisquam voluptate quos corporis nisi, saepe accusantium facilis dolores debitis consequatur quis nesciunt exercitationem inventore voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, amet repellendus iure necessitatibus fugit dolor dolore tempora omnis nesciunt esse adipisci sit reiciendis, eos nam, eaque rerum sapiente dolores harum.</h4>
+            </div>
+            <div class="banner-button1"> <!--button for section 2-->
+                <a href="about.html">Learn more about us!</a>
+            </div>
+        </div>
+        <!--class for products category section-->
+        <div class="products">
+            <hr>
+            <h1>Our Product Variety</h1>
+            <div class="product-types"> <!--container for grid of the product section-->
+                <div class="product1">
+                    <img src="images/cakes.jpg" alt="cake">
+                    <a href="#">Cakes</a>
+                    <div class="rectangle"></div>
+                </div>
+                <div class="product2">
+                    <img src="images/pastries.jpg" alt="pastries">
+                    <a href="#">Pastries</a>
+                    <div class="rectangle"></div>
+                </div>
+                <div class="product3">
+                    <img src="images/cookies.jpg" alt="cookies">
+                    <a href="#">Cookies</a>
+                    <div class="rectangle"></div>
+                </div>
+            </div>
+        </div>
+        <!--class for section2, the second banner part-->
+        <div class="banner2">
+            <div class="banner-img2">
+                <img src="images/banner2.jpg" alt="girl in a bakery">
+                <div class="banner-text2">
+                    <h2>simplify your taste!</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sed maiores inventore. Distinctio illum enim blanditiis.</p>
+                </div>
+            </div>
+        </div>
+        <!--beginning of the concluding section-->
+        <div class="section3">
+            <div class="part1">
+                <div class="discover">
+                    <h1>Discover more!</h1>
+                </div>
+                <div class="information">
+                    <div class="block1">
+                        <img src="images/dcruze.jpg" alt="woman standing in front of yellow wall">
+                    </div>
+                    <div class="block2">
+                        <h3>Margaret D'Cruze</h3>
+                        <p>6132434851</p>
+                        <p>dcruzecakepoppies@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <!--section providing links to the other pages-->
+            <div class="links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--section for the contact form and location-->
+        <div class="section4">
+            <div class="part1">
+                <a href="img-link">
+                    <img src="images/location.png" alt="google maps">
+                </a>
+            </div>
+            <div class="part2">
+                <h2>Your Feedback is important for us!</h2>
+                <form class="form"><!-- contact foprm strating here-->
+                    <label for="fname">Firstname</label>
+                    <input type="text" id="fname" placeholder="Your first name..">
+                    <label for="lname">Lastname</label>
+                    <input type="text" id="lname" placeholder="Your last name..">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Your active email..">
+                    <label for="Phone">Phone number</label>
+                    <input type="number" id="phone" placeholder="Your active contact number..">
+                    <label for="message">Feedback</label>
+                    <textarea name="Textarea" id="feedback" placeholder="Give your feedback here..">
+                    </textarea>
+                    <button type="submit" value="Submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- footer of the page -->
+    <footer>
+        &copy; Copyrights 2020, Vanshika
+    </footer>
+</body>
+</html>
