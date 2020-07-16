@@ -1,0 +1,8 @@
+p{
+    background-color: var(--light);
+}
+
+a{
+    background-color: var(--dark);
+    color: var(--teal);
+}
