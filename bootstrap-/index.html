@@ -8,10 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Bootstrap</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top nav-tabs">
       <a class="navbar-brand" href="#">
         <img src="images/bootsrap-logo.png" alt="Bootstrap logo" width="50" height="50">
       </a>
@@ -21,16 +21,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#Home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#Features">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#Components">Components</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#Documentation">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Footer">Footer</a>
           </li>
         </ul>
         <form class="form-inline ml-auto">
@@ -39,18 +42,17 @@
         </form>
       </div>
     </nav>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" id="Home">
       <div class="container">
         <h1 class="display-3">Bootstrap</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo delectus tenetur sit ullam qui repellat eum esse enim quos. Soluta autem quam eveniet exercitationem consectetur ullam repellendus ipsam, obcaecati rem?</p>
+        <p class="lead">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components. Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms. Bootstrap also supports JavaScript extensions.</p>
       </div>
     </div>
-    <div class="container text-center">
+    <div class="container text-center" id="Features">
       <div class="row">
-        <div class="col-sm-7 my-1 bg-secondary text-white">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <div class="col-sm-7 my-1 p-1 bg-secondary text-white">
+          <h3>Easy to Use</h3>
+          <p>Anybody with just basic knowledge of HTML and CSS can start using Bootstrap.Web designers and web developers like Bootstrap because it is flexible and easy to work with. Its main advantages are that it is responsive by design, it maintains wide browser compatibility, it offers consistent design by using re-usable components, and it is very easy to use and quick to learn. This structure can be easily incorporated in your own project’s file structure by just including the Bootstrap files exactly as they come out of the zip archive, or if it suits your project better, you can rearrange these files and place them anywhere you like.</p>
         </div>
         <div class="col-sm-5 my-1">
           <img src="images/pic2.png" alt="computer" class="img-fluid my-auto">
@@ -61,82 +63,76 @@
           <img src="images/pic3.png" alt="people on stairs" class="img-fluid my-auto">
         </div>
         <div class="col-sm-5 bg-secondary text-white">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 bg-dark text-white p-5">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="container bg-light">
-          <div class="row">
-            <div class="col-sm">
-              <h3>Column 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm">
-              <h3>Column 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm">
-              <h3>Column 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm">
-              <h3>Column 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm">
-              <h3>Column 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm">
-              <h3>Column 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm bg-dark text-white p-5">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
-        <div class="col-sm">
-          <img src="images/pic1.png" alt="boy solving problems" class="img-fluid my-auto">
-        </div>
-      </div>
-      <div class="row bg-secondary text-white">
-        <div class="col-sm">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          <h3>Responsive Features</h3>
+          <p>Bootstrap's responsive CSS adjusts to phones, tablets, and desktops. Another prominent feature of Bootstrap is its responsive utility classes. Using responsive utility classes, a particular piece of content can be made to appear or hide only on devices depending on the size of the screen being used. This feature is extremely helpful for designers who want to make a mobile and tablet-friendly version of their websites. Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.</p>
         </div>
       </div>
     </div>
-  </div>
+      <div class="jumbotron jumbotron-fluid m-3">
+        <div class="container p-3">
+          <p class="lead">A precompiled version of Bootstrap is available in the form of one CSS file and three JavaScript files that can be readily added to any project. The raw form of Bootstrap, however, enables developers to implement further customization and size optimizations. This raw form is modular, meaning that the developer can remove unneeded components, apply a theme and modify the uncompiled Sass files.</p>
+        </div>
+      </div>
+        <div class="container bg-light mt-4 py-4 px-3 text-center" id="Components">
+          <div class="row">
+            <div class="col-sm">
+              <h3>Mobile Friendly</h3>
+              <p>Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core framework</p>
+            </div>
+            <div class="col-sm">
+              <h3>Pre-Styled Components</h3>
+              <p>Bootstrap approaches with pre-styled components for alerts, dropdowns, nav bars, etc.</p>
+            </div>
+            <div class="col-sm">
+              <h3>Customizable Bootstrap</h3>
+              <p>The Bootstrap can be customized as per the designs of your project.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container bg-light mb-4 py-4 px-3 text-center">
+          <div class="row">
+            <div class="col-sm">
+              <h3>Browser Compatability</h3>
+              <p>Bootstrap is compatible with all modern browsers (Chrome, Firefox, Internet Explorer, Safari, and Opera)</p>
+            </div>
+            <div class="col-sm">
+              <h3>Great Grid system</h3>
+              <p>Bootstrap is built on responsive 12-column grids, layouts and components. Whether you need a fixed grid or a responsive, it's only a matter of a few changes.</p>
+            </div>
+            <div class="col-sm">
+              <h3>JavaScript Plugins</h3>
+              <p>The components such as drop down menu are made interactive with the numerous JavaScript plugins bundled in the bootstrap package.</p>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid m-3">
+          <div class="container p-3">
+            <p class="lead">A precompiled version of Bootstrap is available in the form of one CSS file and three JavaScript files that can be readily added to any project. The raw form of Bootstrap, however, enables developers to implement further customization and size optimizations. This raw form is modular, meaning that the developer can remove unneeded components, apply a theme and modify the uncompiled Sass files.</p>
+          </div>
+        </div>
+        <div class="container" id="Documentation">
+          <div class="row">
+            <div class="col-sm">
+              <h3>Good Documentation</h3>
+              <p>Not only does Bootstrap offer styling for almost every element a typical website or web application requires, it also provides a great documentation with examples and demo that only make it more easier for even someone new. Designers need a solid foundation that gives us almost everything a typical website would require but is flexible enough for customization. Thanks to hundreds of hours spent by some developers and companies, we now have dozens of CSS Frameworks to choose from.</p>
+
+              <p>Among all the available CSS frameworks out there, Bootstrap is my favorite and also one of the most widely used. It's included by default in Joomla 3, and is wildly popular amongst WordPress and Drupal users. In the last 3 years, Bootstrap's popularity grew over 1,000% and has become by far the most popular CSS framework.</p>
+            </div>
+            <div class="col-sm">
+              <img src="images/pic1.png" alt="boy solving problems" class="img-fluid my-auto">
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid" id="Footer">
+          <div class="container p-3">
+            <p class="lead">Copyright,2020 Vanshika</p>
+            <p>References:</p>
+            <a href="https://www.sitesbay.com/bootstrap/bootstrap-features-of-bootstrap" class="btn-info p-2">Sitesbay</a>
+            <a href="https://getbootstrap.com/" class="btn-info p-2">Bootstrap</a>
+            <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" class="btn-info p-2">Wikipedia</a>
+          </div>
+        </div>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
