@@ -152,7 +152,16 @@
     top: 80%;
   }
 
+  .c-icon img:hover{
+        transform: scale(1.11);
+        transition: all 0.3s ease-in-out 0s;
+  }
 
+  p.lead.social-links{
+      font-size: 2.5rem;
+      color: rgb(22, 21, 54);
+      
+  }
   @media (min-width: 700px){
       .cover{
         width: 9.25rem;
