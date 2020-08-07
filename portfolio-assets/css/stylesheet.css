@@ -172,6 +172,9 @@
       left: 0;
       min-height: 300px;
   }
+  
+  .about-three{
+    background-color: #ccdeff;
   }
   @media (min-width: 700px){
       .cover{
