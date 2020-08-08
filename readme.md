@@ -6,7 +6,7 @@ There were many challenges that I had:
 * Using bootstrap _kindof professionally_ for the first time.
 * Keeping it in a good layout as it was representing me.
 * Working with github.
-* Folder names and linking mulitple assets with each other, located in diferent folders either.
+* Folder names and linking mulitple assets with each other, located in different folders either.
 * Adding my resume that opens in a different tab.
 
 To overcome these, number of things helped me:
@@ -14,7 +14,7 @@ To overcome these, number of things helped me:
 2. Internet.
 3. Youtube.
 
-Some of the things that are solutions to my _above mentioned_ problems are:
+Some of the things that are solutions to my _,above mentioned,_ problems are:
 * Pushing everytime you make 3-4 changes to avoid long time waiting and even _"timed out session"_ in future.
 * using _**/-(forward slash)**_ to link files outside the folder.
 * Using **target="_blank"** to open any file in a new tab.
