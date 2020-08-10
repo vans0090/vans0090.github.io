@@ -176,6 +176,10 @@
   .about-three{
     background-color: #ccdeff;
   }
+
+  .footer-social i{
+    color: rgb(48, 48, 48);
+  }
   @media (min-width: 700px){
       .cover{
         width: 9.25rem;
