@@ -190,7 +190,6 @@
         width: 9.25rem;
         height: 12.5rem;
       }
-
       .page{
         width: 9rem;
         height: 12rem;
@@ -210,9 +209,16 @@
     h4.contact-text{
       font-size: 0.75rem;
     }
+    h1.artworks-heading{
+      font-size: 2.75rem;
+      margin-top: 2rem;
+    }
   }
   @media (max-width: 500px) {
     h4.contact-text{
       font-size: 0.5rem;
+    }
+    h1.artworks-heading{
+      font-size: 2rem;
     }
   }
