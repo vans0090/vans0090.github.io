@@ -185,6 +185,20 @@
     color: rgb(49, 49, 49);
   }
 
+  .each-image{
+    animation: text-scale 2s infinite;
+  }
+
+  @keyframes text-scale{
+    0%, 100%{
+      transform: scale(1.0);
+    }
+
+    50%{
+      transform: scale(1.2);
+    }
+  }
+
   @media (min-width: 700px) {
       .cover{
         width: 9.25rem;
